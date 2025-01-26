@@ -81,3 +81,52 @@ let rev_array_3 = array_3.reverse()
 console.log(rev_array_1)
 console.log(rev_array_2)
 console.log(rev_array_3)
+
+// task 5
+//Parašykite f-ją kuri gražintų paskutinį masyvo elementą
+// getLastItem([1, 2, 3]) ➞ 3 
+// getLastItem(["cat", "dog", "duck"]) ➞ "duck" 
+// getLastItem([true, false, true]) ➞ true
+
+let array_4 = [1, 2, 3];
+let array_5 = ["cat", "dog", "duck"];
+let array_6 = [true, false, true];
+
+
+function get_last_item(array_name){
+    let last_index = array_name.length - 1;
+    return array_name[last_index];
+} 
+
+console.log(get_last_item(array_4));
+console.log(get_last_item(array_5));
+console.log(get_last_item(array_6));
+
+//task 6
+// Parašykite f-ją kuriai būtų perduodamas parametras masyvas iš skaičių. 
+// Ir gražinamas masyvas kurio elementai yra padauginti iš 2
+// multipliedArray([1, 2, 3, 4, 5, 6]) ➞ [2, 4, 6, 8, 10, 12]
+
+let array_7 = [1, 2, 3, 4, 5, 6];
+
+function multiplied_array(array_name){
+    let new_array = array_name.map(item => item * 2);
+    return new_array;
+}
+
+console.log(multiplied_array(array_7));
+
+//task 7
+// Parašykite f-ją, kuri konvertuotų visus masyvo elementus į stringus
+// parseArray([1, 2, "a", "b"]) ➞ ["1", "2", "a", "b"] 
+// parseArray(["abc", 123, "def", 456]) ➞ ["abc", "123", "def", "456"]
+let array_8 = [1, 2, "a", "b"];
+let array_9 = ["abc", 123, "def", 456];
+
+function to_string(array_name){
+    let new_array = array_name.toString();
+    return new_array;
+}
+
+console.log(to_string(array_8));
+console.log(to_string(array_9));

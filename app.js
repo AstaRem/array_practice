@@ -42,3 +42,42 @@ flowers.unshift('neuzmirstuole', 'pluke');
 console.log(flowers);
 
 show_flowers();
+
+
+//task 3
+// Parašykite f-ją kur konvertuotų masyvą į stringą 
+// x arrayToString([1, 2, 3, 4, 5, 6]) ➞ "123456" 
+// x arrayToString(["a", "b", "c", "d", "e", "f"]) ➞ "abcdef" 
+// x arrayToString([1, 2, 3, "a", "s", "dAAAA"]) ➞ "123asdAAAA"
+
+let skaiciai = [1, 2, 3, 4, 5, 6];
+let raides = ["a", "b", "c", "d", "e", "f"];
+let ivairus = [1, 2, 3, "a", "s", "dAAAA"];
+
+function array_to_string (array_name){
+    return array_name.join('');
+} 
+console.log(array_to_string(skaiciai));
+console.log(array_to_string(raides));
+console.log(array_to_string(ivairus));
+
+//task 4
+// Parašykite f-ją kuri apverstų masyvą
+// reverse([1, 2, 3, 4]) ➞ [4, 3, 2, 1] 
+// reverse([9, 9, 2, 3, 4]) ➞ [4, 3, 2, 9, 9] 
+// reverse([]) ➞ []
+
+let array_1 = [1, 2, 3, 4];
+let array_2 = [9, 9, 2, 3, 4];
+let array_3 = [];
+
+function reversed_array (array_name){
+    return array_name.reverse();
+}
+
+let rev_array_1 = array_1.reverse()
+let rev_array_2 = array_2.reverse()
+let rev_array_3 = array_3.reverse()
+console.log(rev_array_1)
+console.log(rev_array_2)
+console.log(rev_array_3)

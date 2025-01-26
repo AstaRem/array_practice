@@ -130,3 +130,14 @@ function to_string(array_name){
 
 console.log(to_string(array_8));
 console.log(to_string(array_9));
+
+
+//task 8
+//Išvesti į consolę visą daugybos lentelę ciklas cikle pagalba
+for (let i = 1; i <= 10; i++){
+    for (m = 1; m <= 10; m++){
+        let line = `${i} x ${m} = `
+        let result = i * m;
+        console.log(line, result);
+    }
+}
